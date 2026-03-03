@@ -35,6 +35,7 @@ It showcases container orchestration, service exposure, scaling, and cluster man
 
 ## 📂 Project Structure
 
+```
 k8s-microservice/
 │
 ├── app/
@@ -44,16 +45,18 @@ k8s-microservice/
 │   ├── deployment.yaml        # Kubernetes Deployment configuration
 │   └── service.yaml           # Kubernetes Service (NodePort)
 │
-├── screenshots/               # Project screenshots
-│   ├── local-api-docs.png
-│   ├── local-pods.png
-│   ├── local-service.png
-│   ├── ec2-pods.png
-│   └── ec2-browser-output.png
+├── screenshots/
+│   ├── ec2-pods.png            # EC2 Kubernetes pods running
+│   ├── ec2-service.png         # EC2 NodePort service
+│   ├── ec2-api.png             # EC2 application output in browser
+│   ├── local-pods.png          # Local Minikube pods
+│   ├── local-service.png       # Local Minikube service
+│   └── local-api.png           # Local Swagger/API docs
 │
 ├── Dockerfile                 # Docker image definition
 ├── requirements.txt           # Python dependencies
 └── README.md                  # Project documentation
+```
 
 ## 🏛️ Deployment Architecture
 
