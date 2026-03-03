@@ -33,22 +33,27 @@ It showcases container orchestration, service exposure, scaling, and cluster man
 9. Accessed application via EC2 Public IP
 10. Also tested locally using Minikube
 
+## 📂 Project Structure
 
-
-## 📂 Project Structure 
-.
-
+k8s-microservice/
+│
 ├── app/
-│   └── main.py
+│   └── main.py                # FastAPI application
+│
 ├── k8s/
-│   ├── deployment.yaml
-│   └── service.yaml
-├── Dockerfile
-├── requirements.txt
-├── screenshots/
-└── README.md
-
-
+│   ├── deployment.yaml        # Kubernetes Deployment configuration
+│   └── service.yaml           # Kubernetes Service (NodePort)
+│
+├── screenshots/               # Project screenshots
+│   ├── local-api-docs.png
+│   ├── local-pods.png
+│   ├── local-service.png
+│   ├── ec2-pods.png
+│   └── ec2-browser-output.png
+│
+├── Dockerfile                 # Docker image definition
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
 
 ## 🏛️ Deployment Architecture
 
