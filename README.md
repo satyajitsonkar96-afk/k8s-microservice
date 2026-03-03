@@ -37,6 +37,7 @@ It showcases container orchestration, service exposure, scaling, and cluster man
 
 ## 📂 Project Structure 
 .
+
 ├── app/
 │   └── main.py
 ├── k8s/
