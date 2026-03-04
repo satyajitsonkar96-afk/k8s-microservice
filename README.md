@@ -57,7 +57,7 @@ k8s-microservice/
 ├── requirements.txt           # Python dependencies
 └── README.md                  # Project documentation
 ```
-
+```
 ## 🏛️ Deployment Architecture
 
 Client (Browser)
@@ -71,7 +71,7 @@ Kubernetes Pod
 Docker Container
         ↓
 FastAPI Application
-
+```
 
 ## ☁️ Cloud Infrastructure
 
