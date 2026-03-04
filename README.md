@@ -62,17 +62,17 @@ k8s-microservice/
 ## 🏛️ Deployment Architecture
 
 Client (Browser) <br>
-↓ <br>
+      ↓ <br>
 EC2 Public IP <br>
-↓ <br>
+      ↓ <br>
 NodePort Service <br>
-↓ <br>
+      ↓ <br>
 Kubernetes Service <br>
-↓ <br>
+      ↓ <br>
 Kubernetes Pod <br>
-↓ <br>
+      ↓ <br>
 Docker Container <br>
-↓ <br>
+      ↓ <br>
 FastAPI Application
 
 ---
