@@ -86,17 +86,17 @@ FastAPI Application
 
 ## 🚀 How to Run Locally
 
-### 1️⃣ Start Minikube
+## 1️⃣ Start Minikube
 
 minikube start
 
-### 2️⃣ Apply Deployment
+## 2️⃣ Apply Deployment
 
 kubectl apply -f k8s/deployment.yaml
 
 kubectl apply -f k8s/service.yaml
 
-### 2️⃣ Access service 
+## 2️⃣ Access service 
 
 minikube service k8s-service 
 
