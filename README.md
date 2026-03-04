@@ -90,16 +90,15 @@ FastAPI Application
 
 minikube start
 
-
 ### 2️⃣ Apply Deployment
 
 kubectl apply -f k8s/deployment.yaml
+
 kubectl apply -f k8s/service.yaml
 
 ### 2️⃣ Access service 
 
 minikube service k8s-service 
-
 
 ---
 
