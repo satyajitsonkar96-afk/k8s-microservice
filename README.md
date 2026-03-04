@@ -84,22 +84,101 @@ FastAPI Application
 
 ----
 
-## 🚀 How to Run Locally
+# 🚀 How to Run Locally (Minikube)
 
-## 1️⃣ Start Minikube
-
+### 1️⃣ Start Minikube
+```bash
 minikube start
+```
 
-## 2️⃣ Apply Deployment
+### 2️⃣ Deploy Application
+Apply Kubernetes deployment and service configuration.
 
+```bash
 kubectl apply -f k8s/deployment.yaml
-
 kubectl apply -f k8s/service.yaml
+```
 
-## 2️⃣ Access service 
+### 3️⃣ Verify Pods and Services
 
-minikube service k8s-service 
+```bash
+kubectl get pods
+kubectl get services
+```
 
+### 4️⃣ Access the Application
+
+```bash
+minikube service k8s-service
+```
+
+This command will open the application in your browser using the Minikube service URL.
+
+---
+
+# ☁️ How to Run on AWS EC2
+
+### 1️⃣ Connect to EC2 Instance
+
+```bash
+ssh -i k8s.pem ubuntu@<EC2-PUBLIC-IP>
+```
+
+Example:
+
+```bash
+ssh -i k8s.pem ubuntu@13.234.xxx.xxx
+```
+
+---
+
+### 2️⃣ Initialize Kubernetes Cluster
+
+```bash
+sudo kubeadm init
+```
+
+Configure kubectl:
+
+```bash
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+```
+
+---
+
+### 3️⃣ Deploy Application
+
+```bash
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+```
+
+---
+
+### 4️⃣ Verify Deployment
+
+```bash
+kubectl get pods
+kubectl get services
+```
+
+---
+
+### 5️⃣ Access the Application
+
+Open in your browser:
+
+```
+http://<EC2-PUBLIC-IP>:30007
+```
+
+Example:
+
+```
+http://13.234.xxx.xxx:30007
+```
 ---
 
 ## 📊 Kubernetes Concepts Used
