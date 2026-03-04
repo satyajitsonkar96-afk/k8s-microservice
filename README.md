@@ -61,16 +61,18 @@ k8s-microservice/
 
 ## 🏛️ Deployment Architecture
 
-Client (Browser)
-        ↓
-EC2 Public IP : NodePort
-        ↓
-Kubernetes Service
-        ↓
-Kubernetes Pod
-        ↓
-Docker Container
-        ↓
+Client (Browser) <br>
+↓ <br>
+EC2 Public IP <br>
+↓ <br>
+NodePort Service <br>
+↓ <br>
+Kubernetes Service <br>
+↓ <br>
+Kubernetes Pod <br>
+↓ <br>
+Docker Container <br>
+↓ <br>
 FastAPI Application
 
 ---
